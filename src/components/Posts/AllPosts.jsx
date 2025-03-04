@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import "./AllPosts.css";
 import { FilterBar } from "../FilterBar/FilterBar.jsx";
 import { getTopics } from "../../services/Topics.jsx";
+import { Link } from "react-router-dom";
 
 export const AllPosts = ({}) => {
   const [allPosts, setAllPosts] = useState([]);
@@ -46,19 +47,21 @@ export const AllPosts = ({}) => {
       <section className="posts">
         <FilterBar setSearchTerm={setSearchTerm}
         setChosenTopic={setChosenTopic}/>
-      {filteredPosts.map((posts) => {
+      {filteredPosts.map((postObj) => {
         return (
-          <div className="post-info" key={posts.id}>
+          <div className="post-info" key={postObj.id}>
             <h2 className="h2">Title:</h2>
             <div className="post-title">
-              <div>{posts.title}</div>
+            <Link to={`/${postObj.id}`} key={postObj.id} className="post-link">
+              <div>{postObj.title}</div>
+          </Link>
             </div>
             <h2 className="h2">Topic:</h2>
             <div className="post-topic">
-              <div>{posts.topic.name}</div>
+              <div>{postObj.topic.name}</div>
             </div>
             <div className="post-likes">
-              <div>{posts.likes.length}💟</div>
+              <div>{postObj.likes.length}💟</div>
             </div>
           </div>
         );

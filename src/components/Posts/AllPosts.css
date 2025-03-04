@@ -1,0 +1,87 @@
+
+.posts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allows wrapping of squares */
+    gap: 20px; /* Adjust the gap between squares */
+    padding: 20px;
+    justify-content:space-evenly; /* Centers squares horizontally */
+    border: 4px solid slategrey;
+    margin: 3rem;
+    background-color: bisque;
+}
+   .post-info{
+    background-color: #3498db; /* Blue color, change as needed */
+    border-radius: 15px; /* Adjust the border-radius for rounded corners */
+    width: 223px; /* Fixed width for squares */
+    height: 223px; /* Fixed height for squares */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    color: white;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+    padding: 10px
+   }
+   .post-info:hover{
+    background-color: #2980b9; /* Darker blue on hover */
+    background-color: black;
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+   }
+   .post-title,.post-author,.post-body,.post-topic{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    
+   }
+.post{
+    background-color: #3498db; /* Blue color, change as needed */
+    border-radius: 15px; /* Adjust the border-radius for rounded corners */
+    width: 500px; /* Fixed width for squares */
+    height: 500px; /* Fixed height for squares */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    color: white;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px bisque; /* Optional: Adds a shadow */
+    padding: 10px; 
+    margin: auto
+}
+.post-link{
+    color:inherit;
+    text-decoration: none;   
+}
+.post-link:hover{
+    color:blueviolet;
+    
+    
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.post-date,.post-likes{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: auto;    
+}
+.btn-fav{
+   width: 75px;
+   height: 75px; 
+   font-size:200%;
+   background-color:#3498db;
+   border:none;
+}
+.btn-fav:hover{
+    transform: scale(1.62);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-edit{
+    width:100px;
+    height:41px
+}
