@@ -35,6 +35,9 @@
     border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     
    }
 .post{
@@ -84,4 +87,45 @@
 .btn-edit{
     width:100px;
     height:41px
+}
+.user-posts{
+    background-color: #3498db; 
+    color:whitesmoke;
+    border-radius: 10px;
+    width: 250px;
+    height:62px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding:6px;
+    margin:auto;
+    border: 2px solid whitesmoke;
+    text-align: center;
+}
+.user-posts:hover{
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.trash-btn{
+    height:50px;
+    width:50px;
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content */
+    margin-left: 300px; /* Remove margin-left since Flexbox handles spacing */
+}
+.trash-btn:hover{
+    transform: scale(1.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.my-posts{
+    display: flex; /* Aligns children horizontally */
+    flex-direction: column;
+    align-items: center; /* Vertically centers the children */
+    justify-content: center; /* Horizontally centers the children (optional) */
+    gap: 10px; /* Adds space between the elements */
+    margin-bottom: 10px;
 }

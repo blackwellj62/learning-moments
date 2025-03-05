@@ -5,7 +5,7 @@ import { FilterBar } from "../FilterBar/FilterBar.jsx";
 import { getTopics } from "../../services/Topics.jsx";
 import { Link } from "react-router-dom";
 
-export const AllPosts = ({}) => {
+export const AllPosts = () => {
   const [allPosts, setAllPosts] = useState([]);
   const [filteredPosts, setFilteredPosts] = useState([])
   const [searchTerm, setSearchTerm] = useState('')
