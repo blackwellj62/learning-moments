@@ -25,7 +25,7 @@ export const NewPost = ({currentUser}) => {
             body: body,
             date:  new Date(),
             userId: currentUser.id,
-            topicId: chosenTopic
+            topicId: parseInt(chosenTopic)
         }
         newPost(post).then(()=>{
             navigate('/my-posts')

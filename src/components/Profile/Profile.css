@@ -1,0 +1,27 @@
+.profile{
+    background-color: #3498db; /* Blue color, change as needed */
+    border-radius: 15px; /* Adjust the border-radius for rounded corners */
+    width: 500px; /* Fixed width for squares */
+    height: 500px; /* Fixed height for squares */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+    color: white;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px bisque; /* Optional: Adds a shadow */
+    padding: 10px; 
+    margin: auto
+}
+.profile-name,.profile-cohort,.profile-posts{
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
